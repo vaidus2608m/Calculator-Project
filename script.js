@@ -4,7 +4,7 @@ const specialChars = ["%", "/", "*", "-", "+", "="];
 let output = "";
 
 const calculate = (btnValue) => {
-    display.focus();
+    // display.focus();
     if(btnValue == "AC"){
         output = "";
     } else if(btnValue == "DEL"){
@@ -21,4 +21,5 @@ const calculate = (btnValue) => {
 
 buttons.forEach((button) => {
     button.addEventListener("click", (res) => calculate(res.target.dataset.value));
+
 });
